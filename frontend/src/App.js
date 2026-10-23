@@ -824,13 +824,6 @@ function DashboardView({ drains, alerts, liveStats, environment, envImpact, onSe
 
       </div>
 
-      {/* ENVIRONMENTAL FLOOD IMPACT SECTION (Open-Meteo weather + tide) */}
-      <EnvironmentalFloodImpact
-        environment={environment}
-        envImpact={envImpact}
-        drains={drains}
-        isLight={isLight}
-      />
 
 
       {/* GIS MAP SECTION (Leaflet) */}
@@ -1139,6 +1132,13 @@ function DashboardView({ drains, alerts, liveStats, environment, envImpact, onSe
         </div>
       </div>
 
+      {/* ENVIRONMENTAL FLOOD IMPACT SECTION (Open-Meteo weather + tide) */}
+      <EnvironmentalFloodImpact
+        environment={environment}
+        envImpact={envImpact}
+        drains={drains}
+        isLight={isLight}
+      />
     </div>
   );
 }
